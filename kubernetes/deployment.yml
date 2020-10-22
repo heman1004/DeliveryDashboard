@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: DeliveryDashboardContext
+  name: deliverydashboardcontext
   labels:
-    app: DeliveryDashboardContext
+    app: deliverydashboardcontext
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: DeliveryDashboardContext
+      app: deliverydashboardcontext
   template:
     metadata:
       labels:
-        app: DeliveryDashboardContext
+        app: deliverydashboardcontext
     spec:
       containers:
-        - name: DeliveryDashboardContext
-          image: username/DeliveryDashboardContext:latest
+        - name: deliverydashboardcontext
+          image: username/deliverydashboardcontext:latest
           ports:
             - containerPort: 8080
           readinessProbe:
