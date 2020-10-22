@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: DeliveryDashboardContext
+  name: deliverydashboardcontext
   labels:
-    app: DeliveryDashboardContext
+    app: deliverydashboardcontext
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: DeliveryDashboardContext
+    app: deliverydashboardcontext
